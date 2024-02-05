@@ -84,3 +84,5 @@ class DBStorage:
         if cls:
             return len(self.all(cls))
         return len(self.all())
+if __name__ == "__main__":
+    pass
