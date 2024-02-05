@@ -1,8 +1,9 @@
 import unittest
 import sys
-sys.path.insert(0, '..')
+import os
+import json  # Add missing import statement # Add the parent directory to the sys.path
+from ..api.v1.app import app
 from flask import json
-from api.v1.app import app
 
 class TestAPI(unittest.TestCase):
     def setUp(self):
